@@ -12,7 +12,7 @@ function Contact({ }: Props) {
             <p className="text-2xl lg:text-4xl mt-4 lg:mt-10 text-center font-mono">Contact for work</p>
             <div className="mt-6 lg:mt-10 max-w-xl mx-auto">
                 <p className="text-center">
-                    If you are having a promising project that needs the help of a software engineer like me, I'm more than happy to join. Please refer to my contact information below to get in touch:
+                    {`If you are having a promising project that needs the help of a software engineer like me, I'm more than happy to join. Please refer to my contact information below to get in touch:`}
                 </p>
             </div>
             <div className="max-w-lg mx-auto mt-10 lg:mt-20">

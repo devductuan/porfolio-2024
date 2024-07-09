@@ -4,7 +4,7 @@ type Technology = {
     proficiency: number
 }
 
-export type Skill = {
+export type SkillType = {
     id: string,
     label: string,
     description: string,

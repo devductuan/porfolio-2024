@@ -1,6 +1,6 @@
 "use client"
 import { skills } from '@/constants/skills'
-import { Skill } from '@/types/skill'
+import { SkillType } from '@/types/skill'
 import React, { Dispatch, SetStateAction, useMemo, useState } from 'react'
 import Modal from '../Modal'
 import { arrayFromNumber } from '../../../../utils/map'
@@ -13,9 +13,9 @@ type Props = {}
 function SkillsList({ }: Props) {
 
     const [openDialog, setOpenDialog] = useState(false)
-    const [currentSkill, setCurrentSkill] = useState<Skill | null>(null)
+    const [currentSkill, setCurrentSkill] = useState<SkillType | null>(null)
 
-    const selectSkill = (selectedSkill: Skill) => {
+    const selectSkill = (selectedSkill: SkillType) => {
         setOpenDialog(true);
         setCurrentSkill(selectedSkill)
     }
@@ -32,8 +32,8 @@ const Skill = ({
     skill,
     selectSkill
 }: {
-    skill: Skill,
-    selectSkill: (selectedSkill: Skill) => void
+    skill: SkillType,
+    selectSkill: (selectedSkill: SkillType) => void
 }) => {
     return <div className="card cursor-pointer font-medium" onClick={() => { selectSkill(skill) }}>
         <p>{skill.label}</p>
@@ -46,7 +46,7 @@ const SkillDialog = ({
     setOpen
 }: {
     open: boolean,
-    skill: Skill,
+    skill: SkillType,
     setOpen: Dispatch<SetStateAction<boolean>>
 }) => {
     return <Modal setOpen={setOpen} open={open} className="px-4 lg:px-0">

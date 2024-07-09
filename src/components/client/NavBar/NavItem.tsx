@@ -1,8 +1,8 @@
-import { NavItem } from '@/types/nav'
+import { NavItemType } from '@/types/nav'
 import Link from 'next/link'
 
 type Props = {
-    navItem: NavItem
+    navItem: NavItemType
 }
 
 function NavItem({ navItem }: Props) {
