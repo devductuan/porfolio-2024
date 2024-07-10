@@ -23,10 +23,11 @@
 }
 
 .desktop-navbar {
-    @apply fixed hidden lg:flex z-10 top-0 items-center w-full justify-center text-gray-700;
+    @apply font-semibold fixed hidden lg:flex z-10 top-0 items-center w-full justify-center text-gray-700;
     transition: all 0.4s ease-in-out;
     &.clear {
-        background: rgba(255, 255, 255, 0.73);
+        @apply shadow-lg;
+        background: rgba(255, 255, 255);
 
         .nav-item {
         
@@ -408,7 +409,7 @@
     }
 }
 
-#torus-container {
+.torus-container {
     @screen lg {
         height:500px;
         width:500px;

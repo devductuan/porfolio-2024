@@ -11,7 +11,7 @@ function TorusScene({ }: Props) {
 
     return (
         <div id="torus-container" >
-            <Canvas>
+            <Canvas style={{ width: 500, height: 500 }}>
                 <Suspense fallback={null}>
                     {/* <ambientLight intensity={1} /> */}
                     <pointLight color="#f6f3ea" position={[2, 0, -10]} intensity={100} />
@@ -20,7 +20,7 @@ function TorusScene({ }: Props) {
 
                 </Suspense>
             </Canvas>
-        </div>
+        </div >
     )
 }
 
