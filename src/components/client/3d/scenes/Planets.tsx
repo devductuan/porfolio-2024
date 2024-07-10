@@ -40,8 +40,8 @@ function Planets({ }: Props) {
         <div id="canvas-container" className="h-full">
             <Canvas>
                 <Suspense fallback={<Loader />}>
-                    {/* <ambientLight intensity={1} /> */}
-                    <pointLight color="#f6f3ea" position={[2, 0, -20]} intensity={100} />
+                    <ambientLight intensity={1} />
+                    {/* <pointLight color="#f6f3ea" position={[2, 0, -20]} intensity={100} /> */}
 
                     <CrystalSphere />
                     <Stars radius={300} depth={60} count={2000} factor={7} saturation={0} fade={true} />
