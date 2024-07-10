@@ -7,9 +7,8 @@ type Props = {}
 function CrystalSphere({ }: Props) {
     const torusRef = useRef(null)
 
-    const [colorMap, normalMap] = useLoader(TextureLoader, [
+    const [colorMap] = useLoader(TextureLoader, [
         "/assets/textures/crystal.webp",
-        "/assets/textures/metal_normal.jpg",
     ])
 
     useFrame(({ clock }) => {
