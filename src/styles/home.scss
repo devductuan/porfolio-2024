@@ -407,3 +407,10 @@
         background: linear-gradient(135deg, rgb(211, 65, 3) ,rgb(99, 30, 0) );
     }
 }
+
+#torus-container {
+    @screen lg {
+        height:500px;
+        width:500px;
+    }
+}
