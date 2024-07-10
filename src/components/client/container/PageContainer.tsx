@@ -78,7 +78,7 @@ function PageContainer({ children, className = "" }: Props) {
 const MobileNavButton = ({ onClick }: {
     onClick: (e: MouseEvent) => void
 }) => {
-    return <button onClick={onClick} className="lg:hidden block fixed top-0 left-0 z-20 bg-gray-700 bg-opacity-50 p-2 hover:bg-white hover:text-black">
+    return <button onClick={onClick} className="lg:hidden block fixed top-0 left-0 z-20 bg-gray-700 bg-opacity-50 p-2 hover:bg-gray-500">
         <GiHamburgerMenu size={40} />
     </button>
 }
@@ -99,7 +99,17 @@ const MobileNav = ({
             <div className="relative">
                 {
                     NAVS.map((nav, index) =>
-                        <NavItem key={index} navItem={nav} />
+                        <NavItem
+                            key={index}
+                            navItem={nav}
+                            handleClick={(e, navItem) => {
+                                document.querySelector(`#nav-${navItem.id}`)?.classList.add("active")
+                                document.querySelectorAll(`a:not(#nav-${navItem.id})`)?.forEach(nav => {
+                                    nav.classList.remove("active")
+                                })
+                                close()
+                            }}
+                        />
                     )
                 }
             </div>

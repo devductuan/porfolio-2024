@@ -22,11 +22,39 @@
     }
 }
 
-.nav-item {
-    &.active {
-        @apply text-white;
+.desktop-navbar {
+    @apply fixed hidden lg:flex z-10 top-0 items-center w-full justify-center text-gray-700;
+    transition: all 0.4s ease-in-out;
+    &.clear {
+        background: rgba(255, 255, 255, 0.73);
+
+        .nav-item {
+        
+            &.active {
+                background: black; 
+                text-decoration: underline;
+            }
+            &:hover {
+                background: black;
+                text-decoration: underline;
+            }
+        }
     }
 }
+
+.nav-item {
+    text-decoration: none;
+
+    &.active {
+        color: white; 
+        text-decoration: none;
+    }
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 
 .timeline {
     .timeline-time {
@@ -55,6 +83,7 @@
 
         &:hover {
             background: linear-gradient(135deg, rgb(211, 65, 3) ,rgb(99, 30, 0) );
+            color: white;
         }
     }
 
@@ -109,6 +138,8 @@
         }
     }
 }
+
+
 
 .white-card {
     @apply shadow-lg;

@@ -7,7 +7,7 @@ type Props = {}
 
 function Contact({ }: Props) {
     return (
-        <section className="py-20 lg:py-40 container mx-auto h-screen px-4 lg:px-0" id="contact">
+        <section className="py-20 lg:py-40 container mx-auto lg:h-screen px-4 lg:px-0" id="contact">
             <h1 id="heading-contact" className="text-center text-gray-500 text-xs lg:text-sm uppercase">Contact</h1>
             <p className="text-2xl lg:text-4xl mt-4 lg:mt-10 text-center font-mono">Contact for work</p>
             <div className="mt-6 lg:mt-10 max-w-xl mx-auto">
