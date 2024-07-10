@@ -76,7 +76,7 @@ const Proficiency = ({
     isHalf: boolean
 }) => {
 
-    const newMaxScore = useMemo(() => isHalf ? maxScore / 2 : maxScore, [isHalf])
+    const newMaxScore = useMemo(() => isHalf ? maxScore / 2 : maxScore, [maxScore, isHalf])
     const newScore = useMemo(() => isHalf ? score / 2 : score, [score, isHalf])
 
     const renderStar = (currentNumber: number) => {

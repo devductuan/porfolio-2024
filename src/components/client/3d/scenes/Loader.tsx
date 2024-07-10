@@ -8,8 +8,8 @@ export default function Loader() {
                 prepend
                 center
             >
-                <div className="font-mono animate-pulse">
-                    Hello, world!
+                <div className="font-mono animate-pulse text-center " style={{ width: 320 }}>
+                    Ground Control to Major Tuan...
                 </div>
             </Html>
         </>
