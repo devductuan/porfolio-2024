@@ -78,7 +78,7 @@ function PageContainer({ children, className = "" }: Props) {
 const MobileNavButton = ({ onClick }: {
     onClick: (e: MouseEvent) => void
 }) => {
-    return <button onClick={onClick} className="lg:hidden block fixed top-0 left-0 z-20 bg-gray-700 bg-opacity-50 p-2 hover:bg-gray-500">
+    return <button onClick={onClick} className="lg:hidden block fixed top-0 left-0 z-50 bg-gray-700 bg-opacity-50 p-2 hover:bg-gray-500">
         <GiHamburgerMenu size={40} />
     </button>
 }

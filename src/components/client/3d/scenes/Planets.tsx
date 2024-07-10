@@ -60,24 +60,20 @@ function Planets({ }: Props) {
                         prepend
                         as="div"
                         fullscreen
+                        zIndexRange={[1, 10]}
                     >
                         <div className="my-desc">
                             <p className="font-mono text-sm italic">Major Tuan: Nice to see you! :)</p>
                         </div>
-                    </Html>
-
-
-                    <Html
-                        prepend
-                        as="div"
-                        fullscreen
-                    >
                         <div className='my-name typewriter'>
                             <h1 id="heading-home" className="text-3xl font-mono uppercase">Duc Tuan Nguyen</h1>
                             <p>Software engineer</p>
                         </div>
                     </Html>
-                    <OrbitControls enableZoom={false} />
+
+
+
+                    {/* <OrbitControls enableZoom={false} /> */}
                 </Suspense>
             </Canvas>
         </div>

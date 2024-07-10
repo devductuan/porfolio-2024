@@ -6,9 +6,7 @@ type Props = {}
 function Home({ }: Props) {
     return (
         <section className="h-full home-page relative" id="home">
-            <div className="h-full">
-                <Planets />
-            </div>
+            <Planets />
             <div className="my-name typewriter lg:opacity-0">
                 <h1 id="heading-home" className="text-3xl font-mono uppercase">Duc Tuan Nguyen</h1>
                 <p>Software engineer</p>
