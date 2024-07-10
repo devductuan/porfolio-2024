@@ -5,7 +5,7 @@ import Earth from '../shapes/Earth'
 import Jupiter from '../shapes/Jupiter'
 import Mars from '../shapes/Mars'
 import Loader from './Loader'
-import { CameraControls, PerspectiveCamera } from '@react-three/drei'
+import { CameraControls, PerspectiveCamera, Stars } from '@react-three/drei'
 
 type Props = {}
 
@@ -42,6 +42,10 @@ function Planets({ }: Props) {
         <div id="canvas-container" className="h-full">
             <Canvas>
                 <Suspense fallback={<Loader />}>
+                    <ambientLight intensity={2} />
+                    {/* <pointLight color="#f6f3ea" position={[0, 1, -7]} intensity={20} /> */}
+
+                    <Stars radius={300} depth={60} count={2000} factor={7} saturation={0} fade={true} />
                     <Earth />
                     <Jupiter />
                     <Mars />
