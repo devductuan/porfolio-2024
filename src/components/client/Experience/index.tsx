@@ -11,7 +11,7 @@ function Experience({ }: Props) {
             <p className="text-2xl lg:text-4xl mt-4 lg:mt-10 text-center font-mono">My Experience</p>
             <div className="mt-10 lg:mt-20 max-w-xl mx-auto">
                 <p className="text-center">
-                    Mid-level Software Developer with 6 years of coding experience. Eager to learn new technology everyday and passionate to build high quality software and applications.
+                    Mid-level Software Developer with 5 years of coding experience. Eager to learn new technology everyday and passionate to build high quality software and applications.
                 </p>
             </div>
             <Timeline />
